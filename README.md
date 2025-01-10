@@ -1,4 +1,4 @@
-# MDSGNN
+# MFNN
 
 Welcome to the source code repository for our paper: **Beyond Pairwise Dependence: A Multi-Filter Fusion Network for Graph Representation Learning**
 
