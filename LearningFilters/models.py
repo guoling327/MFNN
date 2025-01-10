@@ -229,7 +229,7 @@ def eigen_decompositon(g):
 
 class MFNN0(nn.Module):
     def __init__(self, hidden_dim=128):
-        super(MFNN, self).__init__()
+        super(MFNN0, self).__init__()
         self.constant = 100
         self.hidden_dim = hidden_dim
         self.eig_w = nn.Linear(hidden_dim+1, 1)
