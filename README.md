@@ -1,6 +1,6 @@
 # MDSGNN
 
-Welcome to the source code repository for our paper: **Multi-order Spectral Graph Neural Networks: Fourier Expansion Meet Simplicial Complexes**
+Welcome to the source code repository for our paper: **Beyond Pairwise Dependence: A Multi-Filter Fusion Network for Graph Representation Learning**
 
 
 # Prerequisites:
@@ -12,13 +12,19 @@ networkx
 numpy
 ```
 
+# Exp1: LearningFilters
+go to folder `./LearningFilters`
 
+## Run experiment :
+```sh
+cd LearningFilters
+python training.py
+```
 
-# Exp1: Node Classification 
+# Exp2: Node Classification 
 go to folder `./node_classify/src`
 
 ## Run experiment with Cora:
-
 
 ```sh
 cd node_classify/src
@@ -37,13 +43,13 @@ Before the training commences, the script will download and preprocess the respe
 Subsequently, it performs the appropriate graph-lifting procedure (this process might a while).
 
 
-# Exp2: graph classification
+# Exp3: graph classification
 go to folder `./graph_classify`
 
 We prepared individual scripts for each experiment. The results are written in the
 `exp/results/` directory and are also displayed in the terminal once the training is
 complete. 
-```shell
+```sh
 cd graph_classify
 sh scripts/MFNN-PROETINS.sh
 ```
